@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Bakso Tyga Sapi</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/Logo.png" type="image/icon type" />
+    <script
+      src="https://kit.fontawesome.com/e273e69b57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html" class="logo"
+            ><img src="assets/img/Logo.png" alt="LOGO"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn">
+              Menu
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-content">
+              <a
+                href="index.html#menuPaket"
+                onclick="return toggleSection('menuPaket');"
+                >Menu Paket</a
+              >
+              <a
+                href="index.html#baksoTulangan"
+                onclick="return toggleSection('baksoTulangan');"
+                >Bakso Dan Tulangan</a
+              >
+              <a
+                href="index.html#baksoNyonyor"
+                onclick="return toggleSection('baksoNyonyor');"
+                >Bakso Nyonyor</a
+              >
+              <a
+                href="index.html#mieAyam"
+                onclick="return toggleSection('mieAyam');"
+                >Mie Ayam</a
+              >
+              <a
+                href="index.html#minumanHangat"
+                onclick="return toggleSection('minumanHangat');"
+                >Minuman Hangat
+              </a>
+              <a
+                href="index.html#minumanDingin"
+                onclick="return toggleSection('minumanDingin');"
+                >Minuman Dingin</a
+              >
+              <a
+                href="index.html#pelengkap"
+                onclick="return toggleSection('pelengkap');"
+                >Pelengkap</a
+              >
+            </ul>
+          </li>
+          <li><a href="favorite.html">Favorite</a></li>
+        </ul>
+
+        <div class="nav-icon">
+          <a href="#" id="searchMenu"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" id="cartMenu"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a id="barMenu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+
+        <div class="search-form">
+          <input
+            type="text"
+            id="search-box"
+            name="search-box"
+            placeholder="search here..."
+          />
+        </div>
+        <div class="cart">
+          <div class="shopping-cart">
+            <div class="shopping-cart-header">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i
+              ><span class="badge" id="count">0</span>
+              <div class="shopping-cart-total">
+                <span class="lighter-text">Total:</span>
+                <span class="main-color-text" id="total">Rp 0</span>
+              </div>
+            </div>
+            <!--end shopping-cart-header -->
+            <div class="cart-items">
+              <ul class="shopping-cart-items" id="cartItem"></ul>
+
+              <label class="input">
+                <input
+                  class="input__field"
+                  type="number"
+                  placeholder=" "
+                  required
+                />
+                <span class="input__label">Meja</span>
+              </label>
+              <a id="pesan" class="button">Pesan</a>
+            </div>
+            <div class="cart-proses">
+              <h1>Pesan Telah Di Terima</h1>
+              <p>Terima Kasih</p>
+              <a href="index.html" class="button">Pesan lagi</a>
+            </div>
+          </div>
+          <!--end shopping-cart -->
+        </div>
+      </nav>
+    </header>
+    <section class="favorite">
+      <div class="empty-data">
+        <img src="assets/img/empty_data.svg" alt="empty-data" />
+      </div>
+      <h1>Tidak ada data favorit</h1>
+    </section>
+    <footer>Copyright &copy; Bakso Tyga Sapi 2024</footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Bakso Tyga Sapi</title>
+    <link rel="icon" href="assets/img/Logo.png" type="image/icon type" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e273e69b57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html" class="logo"
+            ><img src="assets/img/Logo.png" alt="LOGO"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn">
+              Menu
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-content">
+              <a href="#menuPaket" onclick="return toggleSection('menuPaket');"
+                >Menu Paket</a
+              >
+              <a
+                href="#baksoTulangan"
+                onclick="return toggleSection('baksoTulangan');"
+                >Bakso Dan Tulangan</a
+              >
+              <a
+                href="#baksoNyonyor"
+                onclick="return toggleSection('baksoNyonyor');"
+                >Bakso Nyonyor</a
+              >
+              <a href="#mieAyam" onclick="return toggleSection('mieAyam');"
+                >Mie Ayam</a
+              >
+              <a
+                href="#minumanHangat"
+                onclick="return toggleSection('minumanHangat');"
+                >Minuman Hangat
+              </a>
+              <a
+                href="#minumanDingin"
+                onclick="return toggleSection('minumanDingin');"
+                >Minuman Dingin</a
+              >
+              <a href="#pelengkap" onclick="return toggleSection('pelengkap');"
+                >Pelengkap</a
+              >
+            </ul>
+          </li>
+          <li><a href="favorite.html">Favorite</a></li>
+        </ul>
+
+        <div class="nav-icon">
+          <a id="searchMenu"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a id="cartMenu"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a id="barMenu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+
+        <div class="search-form">
+          <input
+            type="text"
+            id="search-box"
+            name="search-box"
+            placeholder="search here..."
+          />
+        </div>
+        <div class="cart">
+          <div class="shopping-cart">
+            <div class="shopping-cart-header">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i
+              ><span class="badge" id="count">0</span>
+              <div class="shopping-cart-total">
+                <span class="lighter-text">Total:</span>
+                <span class="main-color-text" id="total">Rp 0</span>
+              </div>
+            </div>
+            <!--end shopping-cart-header -->
+            <div class="cart-items">
+              <ul class="shopping-cart-items" id="cartItem"></ul>
+
+              <label class="input">
+                <input
+                  class="input__field"
+                  type="number"
+                  placeholder=" "
+                  required
+                />
+                <span class="input__label">Meja</span>
+              </label>
+              <a id="pesan" class="button">Pesan</a>
+            </div>
+            <div class="cart-proses">
+              <h1>Pesan Telah Di Terima</h1>
+              <p>Terima Kasih</p>
+              <a href="/" class="button">Pesan lagi</a>
+            </div>
+          </div>
+          <!--end shopping-cart -->
+        </div>
+      </nav>
+
+      <!--end container -->
+    </header>
+
+    <div id="sections" class="container">
+      <!-- menu paket -->
+      <section id="menuPaket">
+        <h1>Menu Paket</h1>
+        <div class="row" id="paket"></div>
+      </section>
+      <!-- end menu paket -->
+      <!-- menu bakso dan tulangan -->
+      <section id="baksoTulangan">
+        <h1>Bakso Dan Tulangan</h1>
+        <div class="row" id="menuBaksoDanTulangan"></div>
+      </section>
+      <!-- end bakso dan tulangan -->
+      <!-- bakso nyonyor -->
+      <section id="baksoNyonyor">
+        <h1>Bakso Nyonyor</h1>
+        <div class="row" id="menuBaksoNyonyor"></div>
+      </section>
+      <!-- end bakso nyonyor -->
+      <!-- mie ayam -->
+      <section id="mieAyam">
+        <h1>Mie Ayam</h1>
+        <div class="row" id="menuMieAyam"></div>
+      </section>
+      <!-- end mie ayam -->
+      <!-- minuman hangat -->
+      <section id="minumanHangat">
+        <h1>Minuman Hangat</h1>
+        <div class="row" id="menuMinumanHangat"></div>
+      </section>
+      <!-- end minuman hangat -->
+      <!-- minuman dingin -->
+      <section id="minumanDingin">
+        <h1>Minuman Dingin</h1>
+        <div class="row" id="menuMinumanDingin"></div>
+      </section>
+      <!-- end minuman dingin -->
+      <!-- pelengkap -->
+      <section id="pelengkap">
+        <h1>Pelengkap</h1>
+        <div class="row" id="menuPelengkap"></div>
+      </section>
+      <!-- end pelengkap -->
+    </div>
+
+    <footer>Copyright &copy; Bakso Tyga Sapi 2024</footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
